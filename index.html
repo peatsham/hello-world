@@ -10,7 +10,14 @@
 </h1>
 <h2>another</h2>
 <center>
-<Button style="background-color: brown; padding: 15px; color: white;">Click Me</Button>
+<Button id="colorChange" style="background-color: brown; padding: 15px; color: white;">Click Me</Button>
+
 </center>
 </body>
+<script>
+    document.getElementById("colorChange").addEventListener('click',function(){
+        document.body.style.backgroundColor = "#FF4F5A"
+        document.body.style.color = 'white'
+    })
+</script>
 </html>
